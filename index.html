@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Playfair+Display:wght@900&family=Poppins:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+
+  </head>
+  <body>
+          
+            <div class="toast-overlay hide"></div>   
+              <div id="news-toast" class="toast px-1" data-bs-autohide="false">
+                  
+                    <button type="button" class="btn-close"></button>
+                
+                <div class="toast-body p-5">
+                  
+                    <img src="assets/porto-logo.png" alt="logo">
+                    <h2 class="py-3">SUBSCRIBE TO NEWSLETTER</h2>
+                    <p class="py-3">
+                      Subscribe to the Porto mailing list to receive updates on new arrivals, special offers and our promotions.
+                    </p>
+                    <div class="input-group py-3">
+                      <input type="text" class="form-control" placeholder="YOUR EMAIL ADDRESS">
+                      <button class="btn" type="button">SUBMIT</button>
+                    </div>
+                    <div class="form-check py-3">
+                      <input type="checkbox" class="form-check-input" id="popup">
+                      <label for="popup" class="form-check-label">Don't show this popup again</label>
+                    </div>
+
+                    
+                </div>
+              </div>
+          
+          <div class="offset-overlay hide"></div>
+          
+          <div class="offset-nav">
+            <div class="offset-close" onclick="toggleOffsetMenu()">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <div class="px-3">
+              
+              <ul class="nav flex-column w-100 ">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span>
+                      <i class="bi bi-house-door"></i>
+                      HOME
+                    </span>
+                    
+                  </a>
+                </li>
+    
+                <li class="nav-item custom-dropdown">
+                  <a href="#" class="nav-link" onclick="toggleDropdown(event)">
+                    
+
+                    <span>
+                      <i class="bi bi-award"></i>
+                      CATEGORIES
+                    </span>
+                    
+                   <span class="custom-dropdown-toggle" >
+                      <i class="fa-solid fa-chevron-down"></i>
+                   </span> 
+                  </a>
+                  <ul class="custom-dropdown-menu nav flex-column" >
+                    <li class="nav-item"><a class="nav-link" >Full Width Banner</a></li>
+                    <li class="nav-item"><a class="nav-link" >Boxed Slider Banner</a></li>
+                    <li class="nav-item"><a class="nav-link" >Boxed Image Banner</a></li>
+                    <li class="nav-item"><a class="nav-link" >Left Sidebar</a></li>
+                    <li class="nav-item"><a class="nav-link" >Right Sidebar</a></li>
+                    <li class="nav-item"><a class="nav-link" >Off Canvas Filter</a></li>
+                    <li class="nav-item"><a class="nav-link" >Horizontal Filter 1</a></li>
+                    <li class="nav-item"><a class="nav-link" >Horizontal Filter 2</a></li>
+                    <li class="nav-item"><a class="nav-link" >List Types</a></li>
+                    <li class="nav-item"><a class="nav-link" >
+                      <span>
+                        Ajax Infinite Scroll
+                        <span class="badge navLink-custom-badge navLink-badge-green">NEW</span>
+                      </span>
+                      
+                    </a></li>
+                    <li class="nav-item"><a class="nav-link" >3 Columns Products</a></li>
+                    <li class="nav-item"><a class="nav-link" >4 Columns Products</a></li>
+                    <li class="nav-item"><a class="nav-link" >5 Columns Products</a></li>
+                    <li class="nav-item"><a class="nav-link" >6 Columns Products</a></li>
+                    <li class="nav-item"><a class="nav-link" >7 Columns Products</a></li>
+                    <li class="nav-item"><a class="nav-link" >8 Columns Products</a></li>
+                </ul>
+                </li>
+                <li class="nav-item custom-dropdown">
+                  <a href="#" class="nav-link" onclick="toggleDropdown(event)">
+
+                    <span>
+                      <i class="bi bi-cart"></i>
+                      PRODUCTS
+                    </span>
+                    
+                   <span class="custom-dropdown-toggle" >
+                      <i class="fa-solid fa-chevron-down"></i>
+                   </span> 
+                
+                  </a>
+                  <ul class="custom-dropdown-menu nav flex-column" >
+                    <li class="nav-item custom-dropdown">
+                        <a  href="#" class="nav-link" onclick="toggleDropdown(event)">
+                          <span>
+                            PRODUCT PAGES
+                          </span>
+                         
+                         <span class="custom-dropdown-toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                         </span> 
+                        </a>
+                        <ul class="custom-dropdown-menu nav flex-column"  >
+                            <li class="nav-item"><a class="nav-link" >SIMPLE PRODUCT</a></li>
+                            <li class="nav-item"><a class="nav-link" >VARIABLE PRODUCT</a></li>
+                            <li class="nav-item"><a class="nav-link" >SALE PRODUCT</a></li>
+                            <li class="nav-item"><a class="nav-link" >FEATURED &amp; ON SALE</a></li>
+                            <li class="nav-item"><a class="nav-link" >WIDTH CUSTOM TAB</a></li>
+                            <li class="nav-item"><a class="nav-link" >WITH LEFT SIDEBAR</a></li>
+                            <li class="nav-item"><a class="nav-link" >WITH RIGHT SIDEBAR</a></li>
+                            <li class="nav-item"><a class="nav-link" >ADD CART STICKY</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item custom-dropdown">
+                        <a href="#"  class="nav-link" onclick="toggleDropdown(event)">
+                          <span>
+                            PRODUCT LAYOUTS
+                          </span>
+
+                         <span class="custom-dropdown-toggle" >
+                            <i class="fa-solid fa-chevron-down"></i>
+                         </span> 
+                        </a>
+                        <ul class="custom-dropdown-menu nav flex-column"  >
+                            <li class="nav-item"><a class="nav-link" href="#">EXTENDED LAYOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" >GRID IMAGE</a></li>
+                            <li class="nav-item"><a class="nav-link" >FULL WIDTH LAYOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" >STICKY INFO</a></li>
+                            <li class="nav-item"><a class="nav-link" >LEFT &amp; RIGHT STICKY</a></li>
+                            <li class="nav-item"><a class="nav-link" >TRANSPARENT IMAGE</a></li>
+                            <li class="nav-item"><a class="nav-link" >CENTER VERTICAL</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">BUILD YOUR OWN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+    
+                <li class="nav-item custom-dropdown">
+                  <a href="#" class="nav-link" onclick="toggleDropdown(event)">
+
+                    <span>
+                      <i class="bi bi-envelope"></i>
+                      PAGES
+                    </span>
+                    
+                   <span class="custom-dropdown-toggle" >
+                      <i class="fa-solid fa-chevron-down"></i>
+                   </span> 
+                
+                  </a>
+                  <ul class="custom-dropdown-menu nav flex-column"  >
+                    <li class="nav-item">
+                        <a class="nav-link" >Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" >Shopping Cart</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" >Checkout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" >Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" >Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" >Forgot Password</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+                    <span>
+                      <i class="fa-regular fa-newspaper"></i>
+                      BLOG
+                    </span>
+    
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+                    <span>
+                      <i class="bi bi-person"></i>
+                      ABOUT US
+                    </span>
+    
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link my-4" >
+                    <span>
+                      <i class="fa-regular fa-star"></i>
+                      BUY PORTO
+                      <span class="badge navLink-custom-badge navLink-badge-red">HOT</span>
+                    </span>
+    
+                    
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+    
+                    MY ACCOUNT
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+    
+                    CONTACT US
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+    
+                    MY WISHLIST
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+    
+                    SITE MAP
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+    
+                    CART
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" >
+    
+                    LOGIN
+                  </a>
+                </li>
+    
+    
+              </ul>
+              <div class="input-group search-bar">
+                <input type="text" class="form-control" placeholder="Search...">
+                <span class="input-group-text">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  
+    
+    
+                </span>
+              </div>
+              <div class="offset-social-links">
+                
+                  <a href="#" class="fb-link">
+    
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                
+    
+                
+                  <a href="#" class="ig-link">
+    
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                
+                
+                  <a href="#" class="twitter-link">
+    
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                
+                
+              </div>
+            </div>
+            
+          </div> 
+          
+
+          <div class="offcanvas offcanvas-end shopping-cart " data-bs-scroll="true" tabindex="-1" id="shopping-cart">
+            
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">
+                Shopping Cart
+              </h1>
+            </div>
+            <div class="offcanvas-body">
+
+              
+              <div class="cart-item">
+                <div class="row cart-item-box">
+                  <div class="col col-7 col-sm-7">
+                    <h3>Ultimate 3D Bluetooth Speaker</h3>
+                    <span>
+                      1  × $99.00
+                    </span>
+                  </div>
+                  <div class="col col-5 col-sm-5 position-relative">
+                    <img src="assets/cart-product-1.jpg" class="cart-item-img"  alt="" width="80" height="80">
+                    <span class="cart-item-close">
+                      <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="row cart-item-box">
+                  <div class="col col-7 col-sm-7">
+                    <h3>Brown Women Casual HandBag</h3>
+                    <span>
+                      1  × $35.00
+                    </span>
+                  </div>
+                  <div class="col col-5 col-sm-5 position-relative">
+                    <img src="assets/cart-product-2.jpg" class="cart-item-img"  alt="" width="80" height="80">
+                    <span class="cart-item-close">
+                     <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </span>
+                  </div>
+                </div>
+
+
+                <div class="row cart-item-box">
+                  <div class="col col-7 col-sm-7">
+                    <h3>Circled Ultimate 3D Speaker</h3>
+                    <span>
+                      1  × $35.00
+                    </span>
+                  </div>
+                  <div class="col col-5 col-sm-5 position-relative">
+                    <img src="assets/cart-product-3.jpg"  class="cart-item-img" alt="" width="80" height="80">
+                    <span class="cart-item-close">
+                      <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </span>
+
+                  </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <div class="row">
+                  <div class="col col-4 col-sm-4">
+                      <h4>SUBTOTAL: </h4>
+                  </div>
+                  <div class="col col-8 col-sm-8">
+                      <h4>$134.00</h4>
+                  </div>
+                </div>
+            </div>
+            <div class="cart-links">
+              <a href="#" class="cart-link-light">VIEW CART</a>
+              <a href="#" class="cart-link-dark">CHECKOUT</a>
+            </div>  
+            </div>
+          </div>
+          
+          <div class="sidebar-overlay hide" onclick="toggleSidebar()"> </div>
+          <div class="sidebar-toggle" onclick="toggleSidebar()">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div class="sidebar">
+              <div class="sidebar-offers">
+                  <div class="carousel slide" id="offers-carousel">
+                    
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active slide-1">
+                          <div class="sidebar-carousel-caption">
+                              <div class="sale-badge">
+                                  <div class="badge-inner-circle"></div>
+                                  <div class="badge-text">
+                                    <h1>SALE</h1>
+                                    <h3>MANY ITEM</h3>
+                                  </div>
+                                 
+                              </div>
+                              <div class="offer-primary-text d-flex">
+                                <p >UP TO</p>
+                                <h1>50</h1>
+                                <div class="offer-off">
+                                  <h2>%</h2>
+                                  <h3>OFF</h3>
+                                </div>
+                              </div>
+                              <p class="offer-secondary-text">
+                                Bags, Clothing, T-Shirts, Shoes, Watches and much more...
+                              </p>
+                              <a href="#" class="offer-link">VIEW SALE</a>
+                          </div>
+                      </div>
+                      <div class="carousel-item slide-2">
+                        <img src="assets/banner-7.jpg" alt="  ">
+                        <div class="sidebar-carousel-caption">
+                          
+                            <h1 class="offer-heading">DRONE + CAMERAS</h1>
+                          
+                            <div class="offer-primary-text  d-flex">
+                              <p>UP TO</p>
+                              <h1 class="offer-label">$100
+                                
+                              </h1>
+                              <h3>OFF</h3>
+                              
+                            </div>
+
+                          
+
+                            
+                            <p class="offer-secondary-text">
+                              Top Brands and Models!
+                            </p>
+                            <a href="#" class="offer-link">VIEW SALE</a>
+
+                        </div>
+                      </div>
+                      <div class="carousel-item slide-3">
+                        
+                          <h1 class="offer-heading">HEADPHONES SALE</h1>  
+                        
+                        <img src="assets/banner-8.jpg" alt="">
+                        <div class="offer-primary-text d-flex">
+                          <p >UP TO</p>
+                          <h1 class="offer-label">
+                            50%
+
+                            
+                          </h1>
+                          <h3>OFF</h3>
+
+                        </div>
+                        <a href="#" class="offer-link">VIEW SALE</a>
+                      </div>
+                    </div>
+                    <button class="active" data-bs-target="#offers-carousel" data-bs-slide-to="0"></button>
+                    <button  data-bs-target="#offers-carousel" data-bs-slide-to="1"></button>
+                    <button  data-bs-target="#offers-carousel" data-bs-slide-to="2"></button>
+                  </div>
+
+              </div>
+
+              <div class="sidebar-newsletter">
+                  <h1>SUBSCRIBE NEWSLETTER</h1>
+                  <p>Get all the latest information on Events, Sales and Offers.
+
+                  </p>
+
+                  <div class="email-input d-flex">
+                    <span>
+                      <i class="bi bi-envelope-open"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email Address">
+                  </div>
+                  <button type="button" class="btn custom-btn">SUBSCRIBE</button>
+
+
+              </div>
+              <div class="sidebar-testimonials">
+                <div class="carousel slide" id="carousel-testimonials">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row align-items-center py-4" >
+                        <div class="col col-4 col-sm-4 client-img-wrapper">
+                          <img src="assets/client-1.jpg" alt="" class="client-img">
+                        </div>
+                        <div class="col col-8 col-sm-8 client-about ">
+                          <h2>John Smith</h2>
+                          <p>CEO & Founder</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="testimonial-text">
+                          <span class="quotes">“</span>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, aut!</p>
+                      </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                      <div class="row align-items-center  py-4">
+                        <div class="col col-4 col-sm-4 client-img-wrapper">
+                          <img src="assets/client-2.jpg" alt="" class="client-img">
+                        </div>
+                        <div class="col col-8 col-sm-8 client-about ">
+                          <h2>Jane Smith</h2>
+                          <p>CEO & Founder</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="testimonial-text">
+                          <span class="quotes">“</span>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, aut!</p>
+                      </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                      <div class="row align-items-center    py-4  ">
+                        <div class="col col-4 col-sm-4 client-img-wrapper">
+                          <img src="assets/client-3.jpg" alt="" class="client-img">
+                        </div>
+                        <div class="col col-8 col-sm-8 client-about ">
+                          <h2>John Doe</h2>
+                          <p>CEO & Founder</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="testimonial-text">
+                          <span class="quotes">“</span>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, aut!</p>
+                      </div>
+                    </div>
+                  </div>
+                    <button class="active" data-bs-target="#carousel-testimonials" data-bs-slide-to="0"></button>
+                    <button  data-bs-target="#carousel-testimonials" data-bs-slide-to="1"></button>
+                    <button  data-bs-target="#carousel-testimonials" data-bs-slide-to="2"></button>
+                </div>
+              </div>
+
+              <div class="sidebar-blog-posts">
+                <div class="carousel slide" id="carousel-blog">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="post-img">
+                        <img src="assets/post-1.jpg" alt="">
+                        <div class="post-date">
+                          <span class="day"> 29</span>
+                          <span class="month">JUN</span>
+                        </div>
+                        <div class="search">
+                         <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      </div>
+                      <div class="post-caption">
+                        <h1 class="post-heading">Post Format Standard</h1>
+                        <p class="post-para">
+                          Leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with... 
+                        </p>
+                        <a href="#" class="post-link">
+                          read more
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                      <div class="post-img">
+                        <img src="assets/post-2.jpg" alt="">
+                        <div class="post-date">
+                          <span class="day"> 29</span>
+                          <span class="month">JUN</span>
+                        </div>
+                        <div class="search">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="post-caption">
+                        <h1 class="post-heading">Fashion Trends</h1>
+                        <p class="post-para">
+                          Leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with... 
+                        </p>
+                        <a href="#" class="post-link">
+                          read more
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                      <div class="post-img">
+                        <img src="assets/post-3.jpg" alt="">
+                        <div class="post-date">
+                          <span class="day"> 29</span>
+                          <span class="month">JUN</span>
+                        </div>
+                        <div class="search">
+                          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      </div>
+                      <div class="post-caption">
+                        <h1 class="post-heading">Post Format Video</h1>
+                        <p class="post-para">
+                          Leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with... 
+                        </p>
+                        <a href="#" class="post-link">
+                          read more
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <button class="active" data-bs-target="#carousel-blog" data-bs-slide-to="0"></button>
+                  <button  data-bs-target="#carousel-blog" data-bs-slide-to="1"></button>
+                  <button  data-bs-target="#carousel-blog" data-bs-slide-to="2"></button>
+                </div>
+              </div>
+          </div>
+          
+    <div  id="main">
+      <div class="alert alert-dismissible custom-alert-dark fade show" role="alert">
+        <h5>Get Up to <b>40% OFF</b> New-Season Styles </h5>
+        <a href="#" class="custom-alert-link">MEN</a>
+        <a href="#" class="custom-alert-link">WOMEN</a>
+        <span class="text-light">* Limited time only.</span>
+        
+          <button class="custom-btn-close btn-close"  data-bs-dismiss="alert" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        
+      </div>
+      <nav class="nav-top">
+        <div class="container">
+             
+              <div class="align-items-center  d-flex justify-content-between flex-nowrap">
+                  <div class="">
+                      <div class="header-left">
+                        <div class="language tooltip-trigger">
+                          <span   class="px-3">
+                          
+                            <img src="assets/usa.png" alt="flag" width="20" height="20">
+                            <a href="#" class=" ">ENG</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                          </span>
+                        
+                          <div class="top-nav-tooltip "> 
+                            <ul class="lang-li tooltip-li" >
+                              <li>
+                                <span   class="px-3">
+                              
+                                  <img src="assets/usa.png" alt="flag" width="20" height="20">
+                                  <a href="#">ENG</a>
+                                  
+      
+                                </span>
+                              </li>
+                              <li>
+                                <span   class="px-3">
+                              
+                                  <img src="assets/france.png" alt="flag" width="20" height="20">
+                                  <a href="#">FRA</a>
+                                  
+      
+                              </span>
+                              </li>
+                            </ul>
+                            
+                          </div>
+                        
+                        </div>
+                        <div class="currency tooltip-trigger">
+                          <span class="px-3">
+                            <a href="#" class=" ">USD</a>  
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </span>
+                          <div class="top-nav-tooltip  ">
+                            <ul class="currency-li tooltip-li">
+                              <li>
+                                <a href="#" class="currency-a">EUR</a>
+                              </li>
+                              <li>
+                                <a href="#" class="currency-a">USD</a>  
+                              </li>
+                            </ul>
+                          </div>
+                          
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="header-right">
+                      <div class="links tooltip-trigger">
+                        <span >
+                          <a href="#" class="">
+                            
+                            Links
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </a>
+                          
+                        </span>
+                          <div class=" top-nav-tooltip ">
+                            <ul class="links-li tooltip-li">
+                              <li>
+                                <a href="#">MY ACCOUNT</a>
+                              </li>
+                              <li>
+                                <a href="#">CONTACT US</a>
+                              </li>
+                              <li>
+                                <a href="#">MY WISHLIST</a>
+                              </li>
+                              <li>
+                                <a href="#">SITE MAP</a>
+                              </li>
+                              <li>
+                                <a href="#">CART</a>
+                              </li>
+                              <li>
+                                <a href="#">LOG IN</a>
+                              </li>
+                            </ul>
+                        </div>
+                        
+                      </div>
+                      
+                      <span class="social-icons">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-twitter"></i>
+                          <i class="fa-brands fa-instagram"></i>
+                      </span>
+                  </div>
+                  </div>
+
+                
+              </div>
+                
+            
+            
+        </div>
+      </nav>
+      <nav class="d-flex align-items-center main-nav py-5">
+        
+      <div>
+        
+          <i class="fa-solid fa-bars ham-icon px-3"></i>
+
+        <a href="#">
+          <img src="assets/porto-logo.png" alt="logo" width="111" height="44">
+        </a>
+      </div>
+      
+
+      <div class="main-nav-icons px-3">
+        <a href="#">
+            <i class="bi bi-person"></i>
+        </a>
+        <a href="#">
+            <i class="bi bi-heart"></i>
+        </a>
+        <a href="#">
+            <i class="bi bi-bag  position-relative">
+              <span class="position-absolute   badge  rounded-pill translate-middle  custom-badge">3</span>
+            </i>
+
+        </a>
+        
+          
+            
+          
+        
+       <a  data-bs-toggle="offcanvas" href="#shopping-cart" role="button">
+        
+        <i class="fa-solid fa-chevron-left"></i>
+       </a>
+       
+       
+      </div>
+    </nav>
+
+    
+    
+    <div class="container-md py-2 px-4">
+
+      
+
+      <div class="features py-5" >
+        <ul>
+          <li>
+            <div class="features-box row align-items-center flex-nowrap">
+              <div class="col col-1 col-sm-2">
+                <i class="bi bi-truck feature-box-icons"></i>
+                  
+              </div>
+              <div class="col col-11 col-sm-10">
+                  <div class="px-3">
+                    <h5>FREE SHIPPING AND RETURN</h5>
+                    <p>Free Shipping on all orders over $99</p>
+                  </div>  
+              </div>
+              
+              
+              
+            </div>
+          </li>
+
+          <li>
+            <div class="features-box row align-items-center">
+              <div class="col col-1 col-sm-2">
+                <i class="bi bi-currency-dollar feature-box-icons"></i>
+                  
+              </div>
+              <div class="col col-11 col-sm-10">
+                  <div class="px-3">
+                    <h5>MONEY BACK GUARANTEE</h5>
+                    <p>100% money back guarantee</p>
+                  </div>  
+              </div>
+              
+              
+              
+            </div>
+          </li>
+
+          <li>
+            <div class="features-box  row align-items-center">
+              <div class="col col-1 col-sm-2">
+                <i class="bi bi-clock-history feature-box-icons"></i>
+                  
+              </div>
+              <div class="col col-11 col-sm-10">
+                  <div class="px-3">
+                    <h5>ONINE SUPPORT 24/7</h5>
+                    <p>Lorem ipsum, dolor sit amet</p>
+                  </div>  
+              </div>
+              
+              
+              
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      
+
+      <div class="main-carousel py-3">
+        <div id="carouselExample" class="carousel  slide">
+
+          <div class="carousel-indicators">
+            <button class="active" data-bs-target="#carouselExample" data-bs-slide-to="0"></button>
+            <button  data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button  data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active slide-1">
+              <img src="assets/slide-1.png" class="d-block"  width="835" height="424">
+              <div class="main-carousel-caption">
+                <h5 class="carousel-h5-white">Find the Boundries. Push Through!</h5>
+                <h1 class="carousel-h1-cursive">Summer Sale</h1>
+                <h1 class="carousel-h1-bold">70% OFF</h1>
+                <h6 class="carousel-h6">
+                  STARING AT 
+                  <span class="carousel-span-bg">$199</span>
+                  <a href="#" class="carousel-btn">SHOP NOW</a>
+                </h6>
+              </div>
+            </div>
+            <div class="carousel-item slide-2">
+              <img src="assets/slide-2.jpg" class="d-block" width="835" height="424" >
+              <div class="main-carousel-caption">
+                <h5 class="carousel-h5-grey">OVER 200 PRODUCTS WITH DISCOUNTS</h5>
+                <h1 class="carousel-h1-bold">GREAT DEALS</h1>
+                
+                <h6 class="carousel-h6">
+                  STARING AT 
+                  <span  class="carousel-span">$299</span>
+                  <a href="#" class="carousel-btn">GET YOURS!</a>
+                </h6>
+              </div>
+            </div>
+            <div class="carousel-item slide-3">
+              <img src="assets/slide-3.jpg" class="d-block" width="835" height="424"  >
+              <div class="main-carousel-caption">
+                <h5 class="carousel-h5-grey">UPTO 70% OFF</h5>
+                <h1 class="carousel-h1-bold">NEW ARRIVALS</h1>
+                
+                
+                <h6 class="carousel-h6">
+                  STARING AT 
+                  <span class="carousel-span">$299</span>
+                  <a href="#" class="carousel-btn">GET YOURS!</a>
+                </h6>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+      <div class="banner">
+        <div class="carousel slide" id="banner-carousel" data-bs-touch="true" data-bs-interval="500">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#banner-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active slide-1">
+                <img  class="banner-img"  src="assets/banner-1.jpg" alt="banner" width="265" height="170">
+                <div class="w-100">
+                  <div class="banner-caption w-100">
+                    <h1 class="banner-heading">Porto Watches</h1>
+                    
+                      <h2 class="banner-secondary-off">
+                        <s>20%</s>
+                        <span class="text-big">30%</span>
+                        <span class="text-medium">OFF</span>
+
+                      </h2>
+                      
+                      
+                       
+                    
+                    <a href="#" class="banner-link">SHOP NOW</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="carousel-item  slide-2">
+              <img class="banner-img"   src="assets/banner-2.jpg" alt="banner" width="265" height="170">
+              <div class="w-100">
+                <div class="banner-caption w-100">
+                  <h1 class="banner-heading">DEAL PROMOS</h1>
+                  <h2 class="banner-secondary">
+                    STARTING AT $99
+                  </h2>
+                  
+                  <a href="#" class="banner-link">SHOP NOW</a>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="carousel-item slide-3 ">
+            <img  class="banner-img"  src="assets/banner-3.jpg" alt="banner" width="265" height="170">
+            <div class="w-100">
+              <div class="banner-caption w-100">
+                <h1 class="banner-heading">HANDBAGS</h1>
+                <h2 class="banner-secondary">
+                  STARTING AT $99
+                </h2>
+                <a href="#" class="banner-link">SHOP NOW</a>
+              </div>
+            </div>
+        </div>
+          </div>
+        </div>
+        
+        
+
+      </div>
+
+      
+    <div class="products my-5">
+      <div class="d-flex justify-content-between">
+        <h4>FEATURED PRODUCTS</h4>
+        <div class="custom-carousel-btns">
+          
+              <span  class="carousel-circle carousel-active"></span>  
+            <span class="carousel-circle"></span>      
+          <span class="carousel-circle"></span>
+        
+        </div>  
+      </div>
+      
+      
+      <div class="custom-carousel row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4" >
+        <div class="col">
+          <a href="#"  class="carousel-link" draggable="false">
+            <img src="assets/product-1.jpg" alt="prod" draggable="false">
+            <div class="carousel-badge-wrapper">
+              <div class=" carousel-badge  badge  rounded-pill badge-green">HOT</div>
+              <div class=" carousel-badge  badge  rounded-pill badge-red">-20%</div>
+            </div>
+            
+          </a>
+          <div class="product-caption">
+            <h6>CATEGORY</h6>
+            <h5>Black Headset Grey</h5>
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="price">$ 9.00</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <a href="#" draggable="false" class="carousel-link">
+            <img src="assets/product-2.jpg" alt="prod" draggable="false">
+          </a>
+          <div class="product-caption">
+            <h6>CATEGORY</h6>
+            <h5>Battery Charger</h5>
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="price">$ 9.00</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <a href="#" draggable="false" class="carousel-link">
+            <img src="assets/product-3.jpg" alt="prod" draggable="false">
+          </a>
+          <div class="product-caption">
+            <h6>CATEGORY</h6>
+            <h5>Brown Bag</h5>
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="price">$ 9.00</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <a href="#" draggable="false" class="carousel-link">
+            <img src="assets/product-4.jpg" alt="prod" draggable="false">
+          </a>
+          <div class="product-caption">
+            <h6>CATEGORY</h6>
+            <h5>Casual Note Bag</h5>
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="price">$ 9.00</p>
+          </div>
+        </div>
+
+      <div class="col">
+        <a href="#" draggable="false" class="carousel-link">
+          <img src="assets/product-5.jpg" alt="prod" draggable="false">
+        </a>
+        <div class="product-caption">
+          <h6>CATEGORY</h6>
+          <h5>Porto Extended Camera</h5>
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="price">$ 9.00</p>
+        </div>
+      </div>
+
+
+    
+      </div>
+      
+  </div>
+      
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="menu-bottom d-sm-none">
+      <div class="row">
+        <div class="col menu-bottom-icons">
+          <i class="bi bi-house-door"></i>  
+          <p>HOME</p>
+        </div>
+        <div class="col menu-bottom-icons">
+          <i class="bi bi-list"></i>
+          <p>CATEGORIES</p>
+  
+        </div>
+  
+        <div class="col menu-bottom-icons">
+          <i class="bi bi-heart"></i>
+          <p>WISHLIST</p>
+        </div>
+  
+        <div class="col menu-bottom-icons">
+          <i class="bi bi-person"></i>
+          <p>ACCOUNT</p>
+            
+        </div>
+        
+        <div class="col menu-bottom-icons">
+          <i class="bi bi-bag  position-relative">
+          
+            
+            <span class="position-absolute   badge  rounded-pill translate-middle  custom-badge">3</span>
+          </i>
+          <p>CART</p>
+  
+        </div>
+      </div>
+      
+
+    </div>
+
+
+    <footer>
+        <div class="px-3 py-5">
+          
+          <h5>ABOUT US</h5>
+          <img src="assets/logo-footer.png" alt="logo" width="111" height="44">
+
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quibusdam in totam quisquam quo beatae quos sit quis minima non tempora, repellendus dolorum adipisci doloremque a rerum repellat necessitatibus pariatur!</p>
+          <a href="#">read more...</a>
+
+          <div class="contact">
+            <h4>CONTACT INFO</h4>
+              <div class="address">
+                  <h6>ADDRESS</h6>
+                  <p>123 Street Name, City, England</p>
+              </div>
+              <div class="phone">
+                <h6>PHONE:</h6>
+                <p>(123) 456-7890</p>
+              </div>
+              <div class="email">
+                <h6>EMAIL</h6>
+                <p>main@example.com</p>
+              </div>
+              <div class="working">
+                <h6>WORKING DAYS/HOURS</h6>
+                <p>Mon-Sun / 9:00 AM - 8:00 PM</p>
+              </div>
+          </div>
+        </div>
+    </footer>
+    </div>          
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7991078b1d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
